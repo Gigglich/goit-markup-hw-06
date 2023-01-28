@@ -307,17 +307,24 @@ ul,ol {
 }
 
 .customers-item {
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
+    width: 168px;
+    height: 88px;
 }
 
 .customers-link {
     padding: 16px 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #8E8F99;
 }
 
-
-
-
+.customers-link:hover {
+    border-color: #404BBF;
+    fill: #404BBF;
+}
 
 /* footer */
 
