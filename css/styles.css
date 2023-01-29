@@ -216,6 +216,16 @@ ul,ol {
     width: 264px;
 }
 
+.features-icon {
+    background-color: #F4F4FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+}
+
 /* projects */
 
 .projects {
@@ -311,19 +321,25 @@ ul,ol {
     height: 88px;
 }
 
-.customers-link {
+.customers-img {
     padding: 16px 32px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #8E8F99;
 }
 
-.customers-link:hover {
+.customers-img:hover {
     border-color: #404BBF;
+}
+
+.customers-img:hover .customers-svg {
     fill: #404BBF;
+}
+
+.customers-svg {
+    fill: #8E8F99;
 }
 
 /* footer */
