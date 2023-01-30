@@ -90,7 +90,8 @@ ul,ol {
     margin-right: auto;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
     color: var(--secondary-text-color);
 }
 
@@ -419,7 +420,8 @@ ul,ol {
     border: 1px solid #E7E9FC;
 }
 
-.nav-button:hover {
+.nav-button:hover,
+.nav-button:focus {
     background-color: var(--secondary-text-color);
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px
@@ -463,6 +465,12 @@ ul,ol {
 
 .ill-item {
     width: calc((100% - 48px) / 3);
+}
+
+.ill-item:hover {
+    border: none;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px 
+    rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .ill-text {
