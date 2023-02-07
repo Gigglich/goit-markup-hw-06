@@ -331,14 +331,19 @@ ul,ol {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.customers-svg {
     fill: #8e8f99;
 }
 
-.customers-img:hover {
+.customers-img:hover,
+.customers-img:focus {
     border-color: #404BBF;
 }
 
-.customers-img:hover .customers-svg {
+.customers-img:hover .customers-svg,
+.customers-img:focus .customers-svg {
     fill: #404BBF;
 }
 
