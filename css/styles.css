@@ -562,6 +562,7 @@ ul,ol {
     border-radius: 4px;
     transform: translate(-50%, -50%) scaleX(1);
     transition: transform 300ms linear;
+    padding: 72px 24px 24px 24px;
 }
 
 .modal-close {
@@ -588,4 +589,51 @@ ul,ol {
     opacity: 0;
     visibility: hidden;
     pointer-events: none
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+}
+
+.modal-input  {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.input-text {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-button {
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    border: none;
+    width: 169px;
+    height: 56px;
+    
 }
