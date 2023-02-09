@@ -366,6 +366,19 @@
                     </li>
                 </ul>
             </div>
+            
+            <form class="online-form">
+                <p class="online-title">Subscribe</p>
+                <input type="text" class="online-input" name="online-subscribe" placeholder="E-mail">
+                <button class="online-button">
+                    <div class="online-content">
+                        Subscribe
+                        <svg class="online-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </div>
+                </button>
+            </form>
 
         </div>
     </footer>
@@ -411,9 +424,17 @@
                 <textarea name="user-text" id="user-text" 
                 class="modal-comment" placeholder="Text input"></textarea>
                 
-                <div>
-                    <label for="accept">I accept the terms and conditions of the Privacy Policy</label>
-                    <input type="radio" id="accept" name="accept">
+                <div class="privacy-policy">
+                    <input type="checkbox" id="privacy" 
+                    name="privacy" value="true" class="input-check visually-hidden">
+                    <label for="privacy" class="check-text">
+                        <span>
+                            <svg class="check-icon" width="10px" height="8px"> 
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the<a href="" class="privacy"> Privacy Policy</a>
+                    </label>
                 </div>
 
                 <button type="submit" class="input-button">Send</button>

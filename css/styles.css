@@ -17,8 +17,20 @@ ul,ol {
 .body {
     background-color: #FFFFFF;
     color: var(--title-text-color);
-
     font-family: Roboto, sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .list {
@@ -92,6 +104,8 @@ ul,ol {
 
 .link {
     position: relative;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.current::after {
@@ -108,8 +122,6 @@ ul,ol {
 .link:hover,
 .link.current {
     color: var(--secondary-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list {
@@ -191,13 +203,13 @@ ul,ol {
     margin-top: 48px;
     border-radius: 4px;
     border: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
     background-color: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* features */
@@ -317,13 +329,13 @@ ul,ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
     background-color: #404BBF;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* customers */
@@ -352,24 +364,24 @@ ul,ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-svg {
     fill: #8e8f99;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-img:hover,
 .customers-img:focus {
     border-color: #404BBF;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-img:hover .customers-svg,
 .customers-img:focus .customers-svg {
     fill: #404BBF;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -413,13 +425,13 @@ ul,ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: #31D0AA;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list {
@@ -431,6 +443,68 @@ ul,ol {
 
 .footer> .container {
     display: flex;
+}
+
+.online-form {
+    margin-left: 80px;
+}
+
+.online-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.online-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    outline: none;
+}
+
+.online-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.online-button {
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    margin-left: 24px;
+    width: 165px;
+    height: 40px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 8px 24px;
+    gap: 16px;
+}
+
+.online-button:hover,
+.online-button:focus {
+    background-color: #404BBF;
+}
+
+.online-content {
+    display: flex;
+}
+
+.online-icon {
+    margin-left: 16px;
 }
 
 .portfolio {
@@ -449,6 +523,8 @@ ul,ol {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid #E7E9FC;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-button:hover,
@@ -457,8 +533,6 @@ ul,ol {
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px
      rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cashless-payment {
@@ -498,6 +572,8 @@ ul,ol {
 
 .ill-item {
     width: calc((100% - 48px) / 3);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ill-top-wrap {
@@ -509,8 +585,6 @@ ul,ol {
     border: none;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px 
     rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ill-item:hover .ill-top-text {
@@ -577,12 +651,24 @@ ul,ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover {
+    background-color: #404BBF;  
+}
+
+.modal-close:hover .modal-close-icon {
+    fill: #FFFFFF;
 }
 
 .is-hidden {
@@ -610,6 +696,8 @@ ul,ol {
     margin-bottom: 8px;
     padding-left: 38px;
     outline: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -647,6 +735,8 @@ ul,ol {
     left: 16px;
     top: 50%;
     transform: translateY(-150%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon-phone {
@@ -654,6 +744,8 @@ ul,ol {
     left: 16px;
     top: 50%;
     transform: translateY(-125%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon-email {
@@ -661,6 +753,8 @@ ul,ol {
     left: 16px;
     top: 50%;
     transform: translateY(-125%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-button {
@@ -679,6 +773,14 @@ ul,ol {
     border: none;
     width: 169px;
     height: 56px;
+    margin: auto;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-button:hover,
+.input-button:focus {
+    background: #404BBF;
 }
 
 .modal-comment {
@@ -690,6 +792,8 @@ ul,ol {
     outline: none;
     padding: 8px 16px;
     resize: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment::placeholder {
@@ -702,4 +806,60 @@ ul,ol {
 .modal-comment:hover,
 .modal-comment:focus {
     border: 1px solid #4D5AE5;
+}
+
+/* .check-text::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    display: block;
+    margin-right: 8px;
+}
+
+.input-check:checked + .check-text::before {
+    border: none;
+    background-color: #404BBF;
+    background-image: url(../images/icons.svg#icon-check);
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.check-text span {
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+
+.check-text {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+
+.privacy {
+    color: #4D5AE5;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    margin-left: 3px;
+}
+
+.input-check:checked + .check-text span {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
 }
